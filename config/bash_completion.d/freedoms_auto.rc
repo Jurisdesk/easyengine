@@ -1,4 +1,4 @@
-_ee_complete()
+_freedoms_complete()
 {
     local cur prev BASE_LEVEL
 
@@ -8,7 +8,7 @@ _ee_complete()
     mprev=${COMP_WORDS[COMP_CWORD-2]}
 
 
-    # SETUP THE BASE LEVEL (everything after "ee")
+    # SETUP THE BASE LEVEL (everything after "freedoms")
     if [ $COMP_CWORD -eq 1 ]; then
         COMPREPLY=( $(compgen \
                       -W "stack site debug clean secure import-slow-log log update sync info --version --help --quiet" \
@@ -68,7 +68,7 @@ _ee_complete()
                 ;;
         esac
 
-    # SETUP THE THIRD LEVEL (EVERYTHING AFTER "ee second third")
+    # SETUP THE THIRD LEVEL (EVERYTHING AFTER "freedoms second third")
     elif [ $COMP_CWORD -eq 3 ]; then
         case "$prev" in
             # HANDLE EVERYTHING AFTER THE THIRD LEVEL NAMESPACE
@@ -381,4 +381,4 @@ _ee_complete()
     return 0
 
 } &&
-complete -F _ee_complete ee
+complete -F _freedoms_complete freedoms
