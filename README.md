@@ -1,7 +1,7 @@
 <p><div><img src="https://jurisdesk.com/wp-content/uploads/2015/07/j25k1-temp.png" alt="Jurisdesk LLC Logo" align="right"/></div><br><p>
 **What is Freedoms?**
 
-- Freedoms is a python tool, based off of easy engine by RTcamp.  I'm not taking credit for this.  I'm making a few tweeks that I personally need, and I believe will be beneficial to others. If you need help once the project is done, we offer free support at https://jurisdesk.com/support/.  No catch at all..100% free but we accept donations.  Please wait until this file states that Freedoms is production ready before implementing. </p>< /br></li>
+- Freedoms is a python tool, based off of easy engine by RTcamp.  I'm not taking credit for this.  I'm making a few tweeks that I personally need, and I believe will be beneficial to others. If you need help once the project is done, we offer free support at https://jurisdesk.com/support/.  No catch at all..100% free but we accept donations.  Please wait until this file states that Freedoms is production ready before implementing. </p></li>
 
 - We welcome collaborators, in fact we need them!  If you love wordpress, and you love easy engine, but there are some "Freedoms" you wish you had, just hop on board and let's code them in!  Two is better than one - Many folks is better than two.  Freedoms, just like easy engine makes it easy to simple to manage your wordpress sites running on nginx web-server. Furthermore one item on the roadmap is drupal - Recently I started playing with it, and honestly I love it.  Also on the roadmap is a centos version as it is much needed. </p></li>
 
