@@ -1,4 +1,4 @@
-"""EasyEngine main application entry point."""
+"""Freedoms main application entry point."""
 import sys
 import os
 
@@ -14,60 +14,60 @@ from cement.core import foundation
 from cement.utils.misc import init_defaults
 from cement.core.exc import FrameworkError, CaughtSignal
 from cement.ext.ext_argparse import ArgParseArgumentHandler
-from ee.core import exc
-from ee.cli.ext.ee_outputhandler import EEOutputHandler
+from freedoms.core import exc
+from freedoms.cli.ext.freedoms_outputhandler import EEOutputHandler
 
 # Application default.  Should update config/ee.conf to reflect any
 # changes, or additions here.
-defaults = init_defaults('ee')
+defaults = init_defaults('freedoms')
 
 # All internal/external plugin configurations are loaded from here
-defaults['ee']['plugin_config_dir'] = '/etc/ee/plugins.d'
+defaults['ee']['plugin_config_dir'] = '/etc/freedoms/plugins.d'
 
 # External plugins (generally, do not ship with application code)
-defaults['ee']['plugin_dir'] = '/var/lib/ee/plugins'
+defaults['freedoms']['plugin_dir'] = '/var/lib/freedoms/plugins'
 
 # External templates (generally, do not ship with application code)
-defaults['ee']['template_dir'] = '/var/lib/ee/templates'
+defaults['ee']['template_dir'] = '/var/lib/freedoms/templates'
 
 
-class EEArgHandler(ArgParseArgumentHandler):
+class FreedomsArgHandler(ArgParseArgumentHandler):
     class Meta:
-        label = 'ee_args_handler'
+        label = 'freedoms_args_handler'
 
     def error(self, message):
-        super(EEArgHandler, self).error("unknown args")
+        super(FreedomsArgHandler, self).error("Input Unknown try typing freedoms -h for a list of commands")
 
 
-class EEApp(foundation.CementApp):
+class FreedomsApp(foundation.CementApp):
     class Meta:
-        label = 'ee'
+        label = 'freedoms'
 
         config_defaults = defaults
 
         # All built-in application bootstrapping (always run)
-        bootstrap = 'ee.cli.bootstrap'
+        bootstrap = 'freedoms.cli.bootstrap'
 
         # Optional plugin bootstrapping (only run if plugin is enabled)
-        plugin_bootstrap = 'ee.cli.plugins'
+        plugin_bootstrap = 'freedoms.cli.plugins'
 
         # Internal templates (ship with application code)
-        template_module = 'ee.cli.templates'
+        template_module = 'freedoms.cli.templates'
 
         # Internal plugins (ship with application code)
-        plugin_bootstrap = 'ee.cli.plugins'
+        plugin_bootstrap = 'freedoms.cli.plugins'
 
         extensions = ['mustache']
 
         # default output handler
-        output_handler = EEOutputHandler
+        output_handler = FreedomsOutputHandler
 
-        arg_handler = EEArgHandler
+        arg_handler = FreedomsArgHandler
 
         debug = TOGGLE_DEBUG
 
 
-class EETestApp(EEApp):
+class MyTestApp(MyApp):
     """A test app that is better suited for testing."""
     class Meta:
         argv = []
@@ -76,7 +76,7 @@ class EETestApp(EEApp):
 
 # Define the applicaiton object outside of main, as some libraries might wish
 # to import it as a global (rather than passing it into another class/func)
-app = EEApp()
+app = FreedomsApp()
 
 
 def main():
@@ -128,7 +128,7 @@ def main():
 
 
 def get_test_app(**kw):
-    app = EEApp(**kw)
+    app = FreedomsApp(**kw)
     return app
 
 if __name__ == '__main__':
