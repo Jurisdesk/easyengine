@@ -1,11 +1,10 @@
-[![Travis Build Status](https://travis-ci.org/rtCamp/easyengine.svg "Travis Build Status")] (https://travis-ci.org/rtCamp/easyengine)
-[![Join the chat at https://gitter.im/rtCamp/easyengine](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/rtCamp/easyengine?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 
-<img src="https://d3qt5vpr7p9rgn.cloudfront.net/wp-content/uploads/2013/08/easy-engine-logo-2-RS1-240x184.png" alt="EasyEngine Logo" align="right" />
 
-EasyEngine (ee) is a python tool, which makes it easy to manage your wordpress sites running on nginx web-server.
+<img src="https://https://jurisdesk.com/wp-content/uploads/2015/07/j25k1-temp.png" alt="Jurisdesk LLC Logo" align="right" />
 
-**EasyEngine currently supports:**
+Freedoms is a python tool, based off of easy engine by RTcamp.  I'm not taking credit for this.  I'm making a few tweeks that I personally need, and I believe will be beneficial to others. If you need help once the project is done, we offer free support at https://jurisdesk.com/support/.  No catch at all..100% free but we accept donations.  Please wait until this file states that Freedoms is production ready before implementing.  We welcome collaborators, in fact we need them!  If you love wordpress, and you love easy engine, but there are some "Freedoms" you wish you had, just hop on board and let's code them in!  Two is better than one - Many folks is better than two.  Freedoms, just like easy engine makes it easy to simple to manage your wordpress sites running on nginx web-server. Furthermore one item on the roadmap is drupal - Recently I started playing with it, and honestly I love it.  Also on the roadmap is a centos version as it is much needed.  The centos options are rather complex if your just starting your coding journey. However the best way to learn is to DO.  I wanna give a shout out to digitalocean.com - the number one cloud computing provider.  Don't listen to what people say, it's because they are scared by the command line.  Hopefully this tool will help you learn.  Study the configurations.  Ask questions, learn!  NGINX is powerful.  
+
+**Current Supported Distros - Under Development:**
 
 - Ubuntu 12.04 & 14.04
 - Debian 7 & 8
@@ -14,29 +13,32 @@ EasyEngine (ee) is a python tool, which makes it easy to manage your wordpress s
 - 22/TCP (Inbound/Outbound) : Standard SSH port
 - 80/TCP (Inbound/Outbound) : Standard HTTP port
 - 443/TCP(Inbound/Outbound) : Standard HTTPS port
-- 22222/TCP (Inbound)       : To access EasyEngine admin tools
+- 22222/TCP (Inbound)       : To access Freedoms admin tools
 - 11371/TCP (Outbound)      : To connect to GPG Key Server
 
 ## Quick Start
 
 ```bash
-wget -qO ee rt.cx/ee && sudo bash ee     # Install easyengine 3
+wget -qO freedoms freedoms.cx/jd && sudo bash freedoms     # Install LEMP Stack - with a boatload of additional options.  Configure your static html site or wordpress.  Freedoms makes it simple to create virtual hosts, and configures nginx and the options you choose.  Pagespeed, HHVM, Redis, and/or fcgi with wordpress.  Be careful!  A good config is hhvm and pagespeed or hhvm and redis.  Redis is wonderful if you want to scale out and make your site highly available as it is based off key value pairs and caches objects - think about the possibilities!  Redis and NGINX plus servers worldwide with Redis and NGINX. 
+
+A simple example of the creation of a wordpress site is:
+
 sudo ee site create example.com --wp     # Install required packages & setup WordPress on example.com
 ```
 
-## Update EasyEngine
+## Update Freedoms
 
 
-Update procedure for EasyEngine to latest version
+Update procedure for Freedoms to latest version
 
 #### For current installed version prior to 3.0.6
 ```bash
-wget -qO ee rt.cx/ee && sudo bash ee
+wget -qO freedoms freedoms.cx/jd && sudo bash freedoms
 
 ```
 #### If current version is after than 3.0.6
 ```
-ee update
+freedoms update
 ```
 
 ## More Site Creation Commands
@@ -44,50 +46,50 @@ ee update
 ### Standard WordPress Sites
 
 ```bash
-ee site create example.com --wp                  # install wordpress without any page caching
-ee site create example.com --w3tc                # install wordpress with w3-total-cache plugin
-ee site create example.com --wpsc                # install wordpress with wp-super-cache plugin
-ee site create example.com --wpfc                # install wordpress + nginx fastcgi_cache
-ee site create example.com --wpredis             # install wordpress + nginx redis_cache
+freedoms site create example.com --wp                  # install wordpress without any page caching
+freedoms site create example.com --w3tc                # install wordpress with w3-total-cache plugin
+freedoms site create example.com --wpsc                # install wordpress with wp-super-cache plugin
+freedoms site create example.com --wpfc                # install wordpress + nginx fastcgi_cache
+freedoms site create example.com --wpredis             # install wordpress + nginx redis_cache
 ```
 
 ### WordPress Multsite with subdirectory
 
 ```bash
-ee site create example.com --wpsubdir            # install wpmu-subdirectory without any page caching
-ee site create example.com --wpsubdir --w3tc     # install wpmu-subdirectory with w3-total-cache plugin
-ee site create example.com --wpsubdir --wpsc     # install wpmu-subdirectory with wp-super-cache plugin
-ee site create example.com --wpsubdir --wpfc     # install wpmu-subdirectory + nginx fastcgi_cache
-ee site create example.com --wpsubdir --wpredis  # install wpmu-subdirectory + nginx redis_cache
+freedoms site create example.com --wpsubdir            # install wpmu-subdirectory without any page caching
+freedoms site create example.com --wpsubdir --w3tc     # install wpmu-subdirectory with w3-total-cache plugin
+freedoms site create example.com --wpsubdir --wpsc     # install wpmu-subdirectory with wp-super-cache plugin
+freedoms site create example.com --wpsubdir --wpfc     # install wpmu-subdirectory + nginx fastcgi_cache
+freedoms site create example.com --wpsubdir --wpredis  # install wpmu-subdirectory + nginx redis_cache
 ```
 
 ### WordPress Multsite with subdomain
 
 ```bash
-ee site create example.com --wpsubdomain            # install wpmu-subdomain without any page caching
-ee site create example.com --wpsubdomain --w3tc     # install wpmu-subdomain with w3-total-cache plugin
-ee site create example.com --wpsubdomain --wpsc     # install wpmu-subdomain with wp-super-cache plugin
-ee site create example.com --wpsubdomain --wpfc     # install wpmu-subdomain + nginx fastcgi_cache
-ee site create example.com --wpsubdomain --wpredis  # install wpmu-subdomain + nginx redis_cache
+freedoms site create example.com --wpsubdomain            # install wpmu-subdomain without any page caching
+freedoms site create example.com --wpsubdomain --w3tc     # install wpmu-subdomain with w3-total-cache plugin
+freedoms site create example.com --wpsubdomain --wpsc     # install wpmu-subdomain with wp-super-cache plugin
+freedoms site create example.com --wpsubdomain --wpfc     # install wpmu-subdomain + nginx fastcgi_cache
+freedoms site create example.com --wpsubdomain --wpredis  # install wpmu-subdomain + nginx redis_cache
 ```
 
 ### Non-WordPress Sites
 ```bash
-ee site create example.com --html     # create example.com for static/html sites
-ee site create example.com --php      # create example.com with php support
-ee site create example.com --mysql    # create example.com with php & mysql support
+freedoms site create example.com --html     # create example.com for static/html sites
+freedoms site create example.com --php      # create example.com with php support
+freedoms site create example.com --mysql    # create example.com with php & mysql support
 ```
 
 ### HHVM Enabled Sites
 ```bash
-ee site create example.com --wp --hhvm           # create example.com WordPress site with HHVM support
-ee site create example.com --php --hhvm          # create example.com php site with HHVM support
+freedoms site create example.com --wp --hhvm           # create example.com WordPress site with HHVM support
+freedoms site create example.com --php --hhvm          # create example.com php site with HHVM support
 ```
 
 ### PageSpeed Enabled Sites
 ```bash
-ee site create example.com --wp --pagespeed      # create example.com WordPress site with PageSpeed support
-ee site create example.com --php --pagespeed     # create example.com php site with PageSpeed support
+freedoms site create example.com --wp --pagespeed      # create example.com WordPress site with PageSpeed support
+freedoms site create example.com --php --pagespeed     # create example.com php site with PageSpeed support
 ```
 
 ## Cheatsheet - Site creation
@@ -102,22 +104,22 @@ ee site create example.com --php --pagespeed     # create example.com php site w
 | **Redis cache**    |  --wpredis    |  --wpsubdir --wpredis |  --wpsubdomain --wpredis |
 
 ## Useful Links
-- [Documentation] (http://docs.rtcamp.com/easyengine/)
-- [FAQ] (http://docs.rtcamp.com/easyengine/faq.html)
-- [Conventions used] (http://rtcamp.com/wordpress-nginx/tutorials/conventions/)
-- [EasyEngine Premium Support] (https://rtcamp.com/products/easyengine-premium-support/)
+- [Documentation] (http://nginx.org/wiki)
+- [FAQ] (http://jurisdesk.com/freedoms/faq/)
+- [Structure used] (http://jurisdesk.com/freedoms/structure/)
+- [Free Support] (https://jurisdesk.com/support/)
+- WE DO NOT OFFER PREMIUM SUPPORT - Wordpress started out free - Jurisdesk.com firmly believes in keeping it that way and keeping opensource welll....opensource!  
+## We do accept Donations
 
-## Donations
-
-[![Donate](https://cloud.githubusercontent.com/assets/4115/5297691/c7b50292-7bd7-11e4-987b-2dc21069e756.png)]  (https://rtcamp.com/donate/?project=easyengine)
+[![Donate](https://https://jurisdesk.com/wp-content/uploads/2015/08/NGINX-Feature-Image.png)]  (https://jurisdesk.com/donate/freedoms/)
 
 ## Careers
 
-We are looking for [Python Developers] (https://rtcamp.com/careers/python-developer/) to join our team.
+We are looking for [Python Developers]. Come on over to (https://jurisdesk.com/forums/careers/) to join our team. We need creatives and bloggers too!  
 
-We offer work from home, so you can join EasyEngine team anywhere! _[Why Python?] (https://rtcamp.com/blog/easyengine-3-roadmap/#whypython)_
+Work virtually - I'm sure you already do :-) 
 
 ---
 
 ## License
-[MIT] (http://opensource.org/licenses/MIT)
+[GNU] Opensource Stack Development
