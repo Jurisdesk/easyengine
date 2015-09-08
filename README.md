@@ -7,26 +7,31 @@
 
 - The centos options are rather complex if your just starting your coding journey. However the best way to learn is to DO.  I wanna give a shout out to digitalocean.com - the number one cloud computing provider.  Don't listen to what people say, it's because they are scared by the command line.  Hopefully this tool will help you learn.  Study the configurations.  Ask questions, learn!  NGINX is powerful. </p> </div>
 
-**Current Supported Distros - Under Development:**
+**Roadmap for Supported Distros - Under Development:**
 
 - Ubuntu 12.04 & 14.04
 - Debian 7 & 8
+- Centos 7
+- Ubuntu 15.04
+- Centos 6
 
-**Port Requirements:**
+**Port Requisites:**
 - 22/TCP (Inbound/Outbound) : Standard SSH port
 - 80/TCP (Inbound/Outbound) : Standard HTTP port
 - 443/TCP(Inbound/Outbound) : Standard HTTPS port
-- 22222/TCP (Inbound)       : To access Freedoms admin tools
 - 11371/TCP (Outbound)      : To connect to GPG Key Server
+- Secure your admin area - if you use ssl stapling and don't have a wildcard cert, we plan on keeping all admin tools on a subdirectory rather than a port. 
 
 ## Quick Start
 
 ```bash
-wget -qO freedoms freedoms.cx/jd && sudo bash freedoms     # Install LEMP Stack - with a boatload of additional options.  Configure your static html site or wordpress.  Freedoms makes it simple to create virtual hosts, and configures nginx and the options you choose.  Pagespeed, HHVM, Redis, and/or fcgi with wordpress.  Be careful!  A good config is hhvm and pagespeed or hhvm and redis.  Redis is wonderful if you want to scale out and make your site highly available as it is based off key value pairs and caches objects - think about the possibilities!  Redis and NGINX plus servers worldwide with Redis and NGINX. 
+wget -qO freedoms freedoms.cx/jd && sudo bash freedoms     # Install LEMP Stack - with a boatload of additional options.  Configure your static html site or wordpress.  Freedoms makes it simple to create virtual hosts, and configures nginx and the options you choose.  Pagespeed, HHVM, Redis, and/or fcgi, scgi, and uwsgi. 
+
+Be careful!  A good config is hhvm and pagespeed or hhvm and redis.  Redis is wonderful if you want to scale out and make your site highly available as it is based off key value pairs and caches objects - think about the possibilities!  Redis and NGINX plus servers worldwide with Redis and NGINX. 
 
 A simple example of the creation of a wordpress site is:
 
-sudo ee site create example.com --wp     # Install required packages & setup WordPress on example.com
+sudo freedoms site create example.com --wp     # Install required packages & setup WordPress on example.com
 ```
 
 ## Update Freedoms
@@ -95,7 +100,7 @@ freedoms site create example.com --wp --pagespeed      # create example.com Word
 freedoms site create example.com --php --pagespeed     # create example.com php site with PageSpeed support
 ```
 
-## Cheatsheet - Site creation
+## Planned Stack Options - Site creation
 
 
 |                    |  Single Site  | 	Multisite w/ Subdir  |	Multisite w/ Subdom     |
