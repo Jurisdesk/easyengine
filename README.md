@@ -3,7 +3,9 @@
 
 - Freedoms is a python tool, based off of easy engine by RTcamp.  I'm not taking credit for this.  I'm making a few tweeks that I personally need, and I believe will be beneficial to others. If you need help once the project is done, we offer free support at https://jurisdesk.com/support/.  No catch at all..100% free but we accept donations.  Please wait until this file states that Freedoms is production ready before implementing. </p></li>
 
-- We welcome collaborators, in fact we need them!  If you love wordpress, and you love easy engine, but there are some "Freedoms" you wish you had, just hop on board and let's code them in!  Two is better than one - Many folks is better than two.  Freedoms, just like easy engine makes it easy to simple to manage your wordpress sites running on nginx web-server. Furthermore one item on the roadmap is drupal - Recently I started playing with it, and honestly I love it.  Also on the roadmap is a centos version as it is much needed. </p></li>
+- We welcome collaborators, in fact we need them!  If you love wordpress, and you love what easy engine by RTcamp does, but wish for a tad more "Freedoms", just hop on board and let's code them in! RTcamp has been my unspoken mentor and my teams unspoken mentor. Indirectly through studying their configuration, Jurisdesk.com and nginxhosting.co have designed a plan to kick it up a notch.  
+
+- We need collaboration! Two is better than one - Many folks is better than two.  Freedoms, just like easy engine, will make it super simple to manage your wordpress sites running on an nginx web-server. Furthermore one item on the roadmap is drupal - Recently I started playing with it, and honestly I love it.  Also on the roadmap is a centos version as it is much needed. </p></li>
 
 - The centos options are rather complex if your just starting your coding journey. However the best way to learn is to DO.  I wanna give a shout out to digitalocean.com - the number one cloud computing provider.  Don't listen to what people say, it's because they are scared by the command line.  Hopefully this tool will help you learn.  Study the configurations.  Ask questions, learn!  NGINX is powerful. </p> </div>
 
@@ -119,13 +121,21 @@ freedoms site create example.com --php --pagespeed     # create example.com php 
 - WE DO NOT OFFER PREMIUM SUPPORT - Wordpress started out free - Jurisdesk.com firmly believes in keeping it that way and keeping opensource welll....opensource!  
 ## We do accept Donations
 
-[![Donate](https://https://jurisdesk.com/wp-content/uploads/2015/08/NGINX-Feature-Image.png)]  (https://jurisdesk.com/donate/freedoms/)
+<form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+<input type="hidden" name="cmd" value="_s-xclick">
+<input type="hidden" name="hosted_button_id" value="FXCB3Y3J79JB6">
+<input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donate_SM.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+<img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+</form>
+
 
 ## Careers
 
-We are looking for [Python Developers]. Come on over to (https://jurisdesk.com/forums/careers/) to join our team. We need creatives and bloggers too!  
+We are looking for [Python Developers]. Come on over to (https://jurisdesk.com/forums/careers/) to join our team. We need creatives and bloggers too!  Why python?  Well simply put it rocks, it's simple, and can do anything.  Forget ruby, forget php, python is the future. 
 
 Work virtually - I'm sure you already do :-) 
+
+During development, if you have any questions at all about setting up nginx, come on down to our support forums (https://jurisdesk.com/forums/support/) - We will never ever charge for helping another person!
 
 ---
 
