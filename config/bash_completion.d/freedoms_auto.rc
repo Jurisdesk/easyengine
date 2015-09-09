@@ -165,13 +165,13 @@ _freedoms_complete()
 
             "create")
                 COMPREPLY=( $(compgen \
-                                    -W "--user --pass --email --html --php --mysql --wp  --wpsubdir --wpsubdomain --w3tc --wpfc --wpsc --hhvm --proxy= --pagespeed --wpredis" \
+                                    -W "--user --pass --email --html --php --mysql --wp  --wpsubdir --wpsubdomain --w3tc --wpfc --wpsc --hhvm --proxy= --pagespeed --wpredis --drupal" \
                                  -- $cur) )
                 ;;
 
             "update")
                 COMPREPLY=( $(compgen \
-                                    -W "--password --php --mysql --wp  --wpsubdir --wpsubdomain --w3tc --wpfc --wpsc --hhvm --hhvm=off --pagespeed --pagespeed=off --wpredis" \
+                                    -W "--password --php --mysql --wp  --wpsubdir --wpsubdomain --w3tc --wpfc --wpsc --hhvm --drupal --hhvm=off --pagespeed --pagespeed=off --wpredis" \
                                  -- $cur) )
                 ;;
             "delete")
