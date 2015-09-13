@@ -1,7 +1,7 @@
 <p><div><img src="https://jurisdesk.com/wp-content/uploads/2015/07/j25k1-temp.png" alt="Jurisdesk LLC Logo" align="right"/></div><br><p>
 **What is Freedoms?**
 
-- Freedoms is a python tool, based off of easy engine by RTcamp.  I'm not taking credit for this.  I'm making a few tweeks that I personally need, and I believe will be beneficial to others. If you need help once the project is done, or have a question, we offer free support at https://nginxhosting.co/community/forum/nginx-support/.  No catch at all..100% free!
+- Freedoms is a python tool, based off of easy engine by RTcamp.  I'm not taking credit for this.  I'm making a few tweeks that I personally need, and I believe will be beneficial to others. If you need help once the project is done, or have a question, we offer free support at http://nginxhosting.co/community/forum/nginx-support/.  No catch at all..100% free!
 - Of course we accept donations.  Please wait until this file states that Freedoms is production ready for your nix distro before implementing. </p></li>
 
 - We welcome collaborators, in fact we need them!  If you love wordpress, and you love what easy engine by RTcamp does, but wish for a tad more "Freedoms", just hop on board and let's code them in! RTcamp has been my unspoken mentor and my teams unspoken mentor. Indirectly through studying their configuration, Jurisdesk.com and nginxhosting.co have designed a plan to kick it up a notch.  
