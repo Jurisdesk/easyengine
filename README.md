@@ -55,6 +55,7 @@ wget -qO freedoms freedoms.cx/jd && sudo bash freedoms
 #### Even though it is frowned on by wordpress in the name of "security," for those who are using older versions of wordpress because they carry less bulk, or you prefer them, we do plan on implementing a version specific stack that dates back even further than v 2.0.  However if we find that the interest or demand is not there, then it is quite possible we will not be implementing this.  
 ```
 freedoms update
+
 ```
 
 ## More Site Creation Commands
