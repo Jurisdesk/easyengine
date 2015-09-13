@@ -121,28 +121,20 @@ freedoms site create example.com --php --pagespeed     # create example.com php 
 
 ## Useful Links
 - [Documentation] (http://nginx.org/wiki)
-- [FAQ] (http://jurisdesk.com/freedoms/faq/)
-- [Structure used] (http://jurisdesk.com/freedoms/structure/)
-- [Free Support] (https://jurisdesk.com/support/)
+- [Free Support] (http://nginxhosting.co/community/forum/nginx-support/)
 - WE DO NOT OFFER PREMIUM SUPPORT - Wordpress started out free - Jurisdesk.com firmly believes in keeping it that way and keeping opensource welll....opensource!  
+
+
 ## We do accept Donations
-
-<form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
-<input type="hidden" name="cmd" value="_s-xclick">
-<input type="hidden" name="hosted_button_id" value="Y8VRRKLAGNC2U">
-<input type="image" src="https://flic.kr/p/yob6D2" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
-<img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
-</form>
-
 
 
 ## Careers
 
-We are looking for [Python Developers]. Come on over to (https://jurisdesk.com/forums/careers/) to join our team. We need creatives and bloggers too!  Why python?  Well simply put it rocks, it's simple, and can do anything.  Forget ruby, forget php, python is the future. 
+We are looking for [Python Developers]. Email your resume to james@jurisdesk.com to join our team. We need creatives and bloggers too!  Why python?  Well simply put it rocks, it's simple, and can do anything.  Forget ruby, forget php, python is the future. 
 
 Work virtually - I'm sure you already do :-) 
 
-During development, if you have any questions at all about setting up nginx, come on down to our support forums (https://nginxhosting.co/community/forum/nginx-support/) - We will never ever charge for helping another person!
+During development, if you have any questions at all about setting up nginx, come on down to our support forums () - We will never ever charge for helping another person!
 
 ---
 
