@@ -48,6 +48,11 @@ wget -qO freedoms freedoms.cx/jd && sudo bash freedoms
 ```
 #### If current version is after than 3.0.6
 ```
+
+
+```
+#### Even though it is frowned on by wordpress in the name of "security," for those who are using older versions of wordpress because they carry less bulk, or you prefer them, we do plan on implementing a version specific stack that dates back even further than v 2.0.  However if we find that the interest or demand is not there, then it is quite possible we will not be implementing this.  
+```
 freedoms update
 ```
 
@@ -136,7 +141,7 @@ We are looking for [Python Developers]. Come on over to (https://jurisdesk.com/f
 
 Work virtually - I'm sure you already do :-) 
 
-During development, if you have any questions at all about setting up nginx, come on down to our support forums (https://jurisdesk.com/forums/support/) - We will never ever charge for helping another person!
+During development, if you have any questions at all about setting up nginx, come on down to our support forums (https://nginxhosting.co/community/forum/nginx-support/) - We will never ever charge for helping another person!
 
 ---
 
